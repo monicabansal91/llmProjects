@@ -45,6 +45,7 @@ def stream_chat(model, messages):
         raise e
     
 def main():
+    print(os.getenv('OLLAMA_HOST', 'http://localhost:11434'))
     st.title("Chat with LLMs Models")  # Set the title of the Streamlit app
     logging.info("App started")  # Log that the app has started
     
